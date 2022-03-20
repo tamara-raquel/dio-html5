@@ -1,0 +1,73 @@
+__ CSS3 __
+
+:: Criar regras de estilos para elementos ou grupos de elementos
+
+- O que são seletores
+:: São elementos html, uma propriedade e um valor
+   > ex: a, p, h1, h3 {color: blue;}
+         seletores	declarações
+
+- Conceitos básicos
+:: Id X Classe
+   > id e classe podem representar quaisquer tipos de elementos
+   > id (.), classe (#)
+   > um id só pode ser usado uma vez na página
+
+:: Box Model
+   > Margin: espaçamento entre os elementos
+
+     > Border: circundam o padding e o conteúdo
+	Pode ser alterada em: largura, cor e estilo:
+	Ex: border: 3px solid blue;
+	Ex2: border-top: 2px dotted green
+	Há propriedades específicas para cada lado da borda:
+	:: border-top
+	:: border-right
+	:: border-bottom
+	:: border-left
+	As propriedades específicas são úteis quando tenho 3 lados iguais e quero um quarto lado diferente
+	Há também formas de alterar somente os aspectos específicos da borda: largura, cor e estilo:
+	:: border-width: largura
+	:: border-color: cor
+	:: border-style: contorno
+	Também é possível unir as propriedades e aspectos juntos:
+	Ex: border-top-width: 3px
+	Ex2: border-top-color: blue
+	Border-radius: propriedade que permite arredondar os cantos da borda: em pixels ou porcentagem
+	> também pode alterar um canto individualmente ou todos
+
+       > Padding: é o espaçamento entre a borda e o conteúdo
+	Posso determinar mais de um valor.
+	Ex: padding: 10px 5px; | 10px: eixo y (parte inferior e superior), 5px: eixo x (direita e esquerda)
+	Ex2: padding: 15px 10px 5px 0; | Sentido horário: 15px: topo, 10px: direita, 5px: inferior, 0: esquerda
+	Também podem ser usadas as propriedades específicas para cada lado:
+	:: padding-top
+	:: padding-right
+	:: padding-bottom
+	:: padding-left
+         > Content: o que o seu bloco representa (img, txt, etc.)
+
+:: Background
+   > Aceita a alteração de fundo de várias formas (cor, imagem, etc.)
+     :: background-color: nome da cor ou código hexadecimal
+     :: background-image
+     :: background-position
+
+- Estilizando textos
+:: font-family: modifica a fonte; podem ser usadas fontes da nossa máquina ou da web
+   > web safe fonts: se encontram na maioria dos dispositivos
+:: font-size: altera o tamanho do tetxto (em pixels ou outras unidades)
+:: font-style: altera a aparência do texto
+   > verificar se o navegador tem suporte
+:: font-weight: altera o peso do texto
+:: text-transform: altera o texto entre maiúsculas e minúsculas
+:: text-decoration: usado para dar destaque a algum texto (linhas)
+
+- Listas
+:: ordenadas [ol] e não ordenadas [ul]
+:: list-style-type: para alterar os marcadores das listas
+   > Ex: square, upper-roman, "\1F44D" (símbolo)
+   > list-style-image: usa uma imagem como marcador (passar a url)
+
+
+
