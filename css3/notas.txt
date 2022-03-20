@@ -1,5 +1,11 @@
 __ CSS3 __
 
+Prof. Lucas Vilaboim
+github.com/vilaboim
+linkedin.com/in/vilaboim
+
+Notas de aula
+
 :: Criar regras de estilos para elementos ou grupos de elementos
 
 - O que são seletores
@@ -69,5 +75,15 @@ __ CSS3 __
    > Ex: square, upper-roman, "\1F44D" (símbolo)
    > list-style-image: usa uma imagem como marcador (passar a url)
 
+- Dimensão e alinhamento
+:: width: ajustar largura
+:: height: ajustar altura
+Obs: ajuste relativo ao elemento que vem de fora
+:: max-width
+:: max-height
+Obs: se refere à altura e largura máximas que o elemento pode ter; os elementos vão se ajustar de acordo com a situação
+:: margin: serve para alinhar um elemento automaticamente (quando tem o valor auto)
+:: text-align: alinhar o texto
+   > left, right, center, justify
 
 
