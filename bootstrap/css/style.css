@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #48D1CC;
+}
+
+.quem-somos {
+    background-color: #F8F8FF;
+}
+
+.margin {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.texto {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.rodape {
+    background-color: white;
+    text-decoration: none;
+}

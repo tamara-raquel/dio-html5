@@ -1,0 +1,22 @@
+__ Bootstrap __
+
+Notas de aula
+
+- Mais em HTML5
+:: margin x padding:
+  > margem: cria espaço externo
+  > padding: cria espaço interno
+
+- Framework Bootstrap
+:: Framework usado para desenvolver sites responsivos
+:: Sua biblioteca possui componentes que facilitam a criação de páginas web
+:: Desenvolvimento front-end
+
+Estrutura
+:: Dividida em: containers, rows e columns
+:: Divide a tela em 12 partes
+
+Biblioteca
+:: Contém arquivos de CSS e de JS
+
+- Construindo sites utilizando HTML5, CSS3 e Bootstrap
