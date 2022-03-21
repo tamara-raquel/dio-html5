@@ -14,6 +14,7 @@ I) Introdução ao Flexbox
 :: recursos de alinhamento
 
 2) Entender a diferença entre Flex Container e Flex Item
+3) Conhecer inicialmente algumas propriedades
 
 Flex Container
 :: tag que envolve os itens
@@ -53,7 +54,10 @@ Flex Item
   > align-self
 	Define o alinhamento de um item específico dentro do container
 
-3) Conhecer inicialmente algumas propriedades
+II) Fundamentos do Flexbox
+
+Parte 1 - flex container
+
 - display: flex
 - flex-direction
   > estabelece o eixo principal do container, definindo a direção que os items são colocados no flex container
@@ -115,7 +119,20 @@ Flex Item
 	> space-around
   > mescla conceitos já vistos no align-itens e no justify-content
 
-II) Fundamentos do Flexbox
+Parte 2 - flex items
+
+- flex-grow
+  > define a proporcionalidade de crescimento dos itens, respeitando o tamanho de seus conteúdos internos
+	> não vai fazer a compressão ou a expansão que faça com que o conteúdo do item seja desrespeitado
+	> não irá funcionar caso tenha adicionado justify-content ao flex-container
+	> representado por 0 ou 1
+- flex-basis
+  > estabelece o tamanho inicial do item antes das distribuições do espaço restante dentro dele, usando como base o conteúdo interno disposto
+	> determina o espaço mínimo que o item precisa e distribui o espaço restante antes e depois do conteúdo
+  > valores possíveis:
+	> auto: caso o item não tenha tamanho, este será proporcional ao conteúdo do item
+	> px, %, em, etc.: são valores exatos previamente definidos
+	> 0: terá relação com a definição do flex-grow
 
 III) Projeto integrador
 Land page Flex Turismos
