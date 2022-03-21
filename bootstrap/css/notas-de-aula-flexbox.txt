@@ -74,6 +74,9 @@ Flex Item
 		> quando um elemento já não cabe mais dentro do container, ele é jogado para a linha de baixo
 	    > wrap-reverse: faz a mesma coisa do wrap mas no sentido contrário
 		> quando o elemento não cabe, joga para a linha acima
+- flex-flow
+  > atalho para as propriedades flex-direction e flex-wrap
+	> não é de uso comum porque quando mudamos o flex-direction para column, o padrão flex-wrap (nowrap) é mantido]
 
 
 II) Fundamentos do Flexbox
