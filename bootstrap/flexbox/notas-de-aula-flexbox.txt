@@ -1,0 +1,5 @@
+__ Flexbox __
+
+Objetivo: criar páginas web que se adaptem às diferentes resoluções de tela dos dispositivos
+
+- Criação de layouts responsivos, sem a necessidade da definição de valores fixos
