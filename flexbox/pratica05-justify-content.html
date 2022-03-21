@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Justify content</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        p {
+            color: gray;
+        }
+        .container {
+            max-width: 400px;
+            border: 1px solid grey;
+            margin: 0;
+            display: flex;
+            margin-bottom: 10px;
+            margin: auto;
+        }
+        .column {
+            flex-direction: column;
+            min-height: 300px;
+        }
+        .item {
+            background-color: deepskyblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            padding: 5px;
+        }
+        .flex-start {
+            justify-content: flex-start;
+        }
+        .flex-end {
+            justify-content: flex-end;
+        }
+        .center {
+            justify-content: center;
+        }
+        .sb {
+            justify-content: space-between;
+        }
+        .sa {
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>Justify content</h1>
+    <p>Justify content aplicado com os fundamentos de flex box.</p>
+    <!-- Funcionamento padrão -->
+    <h2>Row</h2>
+    <h3>Flex start</h3>
+    <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <!-- Funcionamento flex-end -->
+    <h3>Flex end</h3>
+    <section class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Tanto no uso do flex start como do flex end, não houve alteração na ordem dos elementos. A ordem foi mantida, só mudou a posição dos elementos, no primeiro caso, alinhados à esquerda e, no segundo, à direita.</p>
+    <!-- Funcionamento centro -->
+    <h3>Center</h3>
+    <section class="container center">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">4</div>
+        <div class="item">mais um item</div>
+    </section>
+    <p>Os itens são alinhados ao centro e o espaçamento tanto na borda à esquerda como à direita são iguais.</p>
+    <!-- Funcionamento espaço entre -->
+    <h3>Space between</h3>
+    <section class="container sb">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">4</div>
+        <div class="item">item 5</div>
+    </section>
+    <p>O primeiro e o último elementos são alinhados aos extremos do container, e o espaçamento é uniformemente distribuído entre os demais itens filhos.</p>
+    <!-- Funcionamento espaço ao redor -->
+    <h3>Space around</h3>
+    <section class="container sa">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">4</div>
+        <div class="item">item 5</div>
+    </section>
+    <p>O espaçamento entre os itens do meio corresponde ao dobro do espaçamento inicial e final.</p>
+    
+    <h2>Column</h2>
+    <h3>Flex start</h3>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Alinha todos os itens pra cima e jogou o espaço para baixo</p>
+    <h3>Flex end</h3>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Alinha todos os itens pra cima e jogou o espaço para cima</p>
+    <h3>Center</h3>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">4</div>
+        <div class="item">mais um item</div>
+    </section>
+    <p>Alinha todos os itens ao centro e divide o espaço restante igualmente acima e abaixo.</p>
+    <h3>Space between</h3>
+    <section class="container sb column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">4</div>
+        <div class="item">item 5</div>
+    </section>
+    <p>Alinha o primeiro e o último itens às extremidades do container e divide o espaço de maneira uniforme entre os outros itens.</p>
+    <h3>Space around</h3>
+    <section class="container sa column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">4</div>
+        <div class="item">item 5</div>
+    </section>
+    <p>Funciona como no row, só que distribuindo o espaço verticalmente.</p>
+</body>
+</html>

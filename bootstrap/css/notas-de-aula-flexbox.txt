@@ -77,6 +77,22 @@ Flex Item
 - flex-flow
   > atalho para as propriedades flex-direction e flex-wrap
 	> não é de uso comum porque quando mudamos o flex-direction para column, o padrão flex-wrap (nowrap) é mantido]
+- justify content
+  > alinha os itens dentro do container
+	> de acordo com a direção determinada
+  > distribuição do espaçamento entre os itens
+	> caso os itens ocupem 100% do container, não se aplica
+  > variações:
+	> flex-start: início do container
+	> flex-end: fim do container
+	> center: centro do container
+	> space-between: cria um espaço igual entre os elementos
+		> coloca o primeiro item no início do container, o último ao fim e estabele o espaço entre os itens
+	> space-around: os espaçamentos do meio são duas vezes maiores que o inicial e o final
+- align-items
+  > alinhamento dos flex itens de acordo com o eixo do container
+	> o alinhamento é diferente para quando os itens estão em colunas ou linhas
+	> permite o alinhamento central no eixo vertical
 
 
 II) Fundamentos do Flexbox
