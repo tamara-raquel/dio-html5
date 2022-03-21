@@ -101,8 +101,21 @@ Flex Item
 	> flex-start: ao início
 	> flex-end: ao fim
 	> baseline: conforme a linha base da tipografia dos itens
+- align-content
+  > é a propriedade responsável por tratar do alinhamento das linhas do container em relação ao eixo vertical do container
+	> é necessário que o container utilize quebra de linha 
+		> implementação do flex-wrap com modo wrap
+	> é necessário que a altura do container seja maior que a soma das linhas dos itens
+  > tipos de alinhamento:
+	> center
+	> stretch
+	> flex-start
+	> flex-end
+	> space-between
+	> space-around
+  > mescla conceitos já vistos no align-itens e no justify-content
 
 II) Fundamentos do Flexbox
 
-II) Projeto integrador
+III) Projeto integrador
 Land page Flex Turismos
