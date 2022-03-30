@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex-shrink</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+        }
+        .item {
+            background-color: blue;
+            margin: 5px;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+        .s-0 {
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+        .s-1 {
+            flex-shrink: 1;
+        }
+        .s-2 {
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .s-3 {
+            flex-shrink: 3;
+            /*flex-basis: 100px;*/
+        }
+        .fg-1 {
+            flex-grow: 1;
+        }
+        .fg-0 {
+            flex-grow: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Flex-shrink</h1>
+    <h3>flex-shrink: 1</h3>
+    <div class="container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+    <p>O conteúdo cresce respeitando a proporção de 1 para cada item. <br>
+    Se eu acrescentar mais itens, eles serão comprimidos para caber no container
+    e o espaço restante será distribuído de forma igual entre os itens:</p>
+    <div class="container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+        <div class="item s-1 fg-1">F</div>
+        <div class="item s-1 fg-1">G</div>
+        <div class="item s-1 fg-1">H</div>
+    </div>
+    <p>No caso seguinte, ainda tenho flex-grow em 1 mas com conteúdos de 
+        tamanhos diferentes. O container comprimiu todos os itens respeitando
+        o espaço mínimo necessário para cada item, mas o segundo item cresceu
+        a tal ponto que não sobrou mais espaço a ser distribuído entre os demais
+        itens.
+    </p>
+    <div class="container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">The generated Lorem Ipsum</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+    </div>
+    <p>No exemplo acima, a quebra de linhou impediu o funcionamento do grow.
+        Se não houvesse quebra de linha o espaço seria distribuído:
+    </p>
+    <div class="container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">The generated</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+    </div>
+    <h3>flex-shrink: 0</h3>
+    <p>A propriedade flex-shrink em 0 significa que não será permitida a redução do tamanho do item.
+        <br>Com essa propriedade e o flex-grow em 1, o conteúdo do item vaza do container.
+    </p>
+
+    <div class="container">
+        <div class="item s-0 fg-1">AAAAAA</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">C</div>
+        <div class="item s-0 fg-1">DDDD</div>
+        <div class="item s-0 fg-1">EEEEEEEE</div>
+    </div>
+    <p>Se o shrink estivesse em 1, ele tentaria comprimir ao máximo os itens para caber dentro do container:</p>
+    <div class="container">
+        <div class="item s-1 fg-1">AAAAAA</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">DDDD</div>
+        <div class="item s-1 fg-1">EEEEEEEE</div>
+    </div>
+    <p>Neste caso, apesar do último item ter vazado do container, esse comportamento era inevitável devido ao seu tamanho. Porém, ele tentou comprimir ao máximo todos os itens para que coubessem no container.</p>
+    <div class="container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-2 fg-1">The generated</div>
+        <div class="item s-2 fg-1">C</div>
+        <div class="item s-3 fg-1">D</div>
+    </div>
+</body>
+</html>

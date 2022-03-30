@@ -133,6 +133,11 @@ Parte 2 - flex items
 	> auto: caso o item não tenha tamanho, este será proporcional ao conteúdo do item
 	> px, %, em, etc.: são valores exatos previamente definidos
 	> 0: terá relação com a definição do flex-grow
+- flex-shrink
+  > estabelece a capacidade de redução ou compressão do tamanho de um item
+	> 1: permite a redução dos itens; 0: não permite
+- flex
+  > atalho ou abreviação para as propriedades: grow, shrink e basis (nessa ordem)
 
 III) Projeto integrador
 Land page Flex Turismos
