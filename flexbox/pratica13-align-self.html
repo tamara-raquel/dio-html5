@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-self</title>
+    <style>
+        .flex-container {
+            max-width: 350px;
+            border: 1px solid grey;
+            margin-bottom: 5px;
+            display: flex;
+        }
+        .item {
+            background-color: aqua;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .column {
+            flex-direction: column;
+        }
+        .center {
+            align-self: center;
+        }
+        .flex-start {
+            align-self: flex-start;
+        }
+        .flex-end {
+            align-self: flex-end;
+        }
+        .baseline {
+            align-self: baseline;
+        }
+        .stretch {
+            align-self: stretch;
+        }
+        .auto {
+            align-self: auto; /* padrão */
+        }
+        .center-container {
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align-self</h1>
+    <h2>Row</h2>
+    <h3>Auto: padrão</h3>
+    <div class="flex-container">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+    <p>Com o align-self em auto ele respeita o que vem do container, nesse caso nada mudou. <br>
+    No entanto, se mudo o <b>container</b> para align-items center, os <b>itens</b> que estão como <b>auto</b> vão seguir a orientação do container e ser alinhados ao centro:</p>
+    <div class="flex-container center-container">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+    <p>Mudando o primeiro elemento para stretch: não faz diferença porque já está seguindo o tamanho do item 3. Mas se acrescentamos quebras de linha no conteúdo do item, ele vi se ajustar usando a propriedade stretch. <br>
+    Mudando o último elemento para flex-end: desloca o item para o fim do container (horizontalmente). <br>
+    Mudando o item 2 para flex-start: desloca para o limite superior.</p>
+    <div class="flex-container">
+        <div class="item stretch">AAA<br>AAAAA<br>AAAAA<br>AAAAA<br>AAAA<br>AAAA<br>AAA</div>
+        <div class="item flex-start">123</div>
+        <div class="item auto">Lorem ipsum is therefore always free from repetition</div>
+        <div class="item flex-end">ITEM 4</div>
+    </div>
+    <p>Mudando o primeiro item para center, item 2: auto, item 3: stretch, item 4: flex-end:</p>
+    <div class="flex-container">
+        <div class="item center">AAAAAA</div>
+        <div class="item auto">123</div>
+        <div class="item stretch">Lorem ipsum is therefore always free from repetition</div>
+        <div class="item flex-end">ITEM 4</div>
+    </div>
+    <p>Quando se trata do eixo das linhas, a mudança no alinhamento de cada item impacta a sua visualização com relação a altura.</p>
+    <h2>Column</h2>
+    <h3>Auto: padrão</h3>
+    <div class="flex-container column">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+    <p>container alinhado ao centro</p>
+    <div class="flex-container center-container column">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </div>
+    <p></p>
+    <div class="flex-container column">
+        <div class="item stretch">AAA<br>AAAAA<br>AAAAA<br>AAAAA<br>AAAA<br>AAAA<br>AAA</div>
+        <div class="item flex-start">123</div>
+        <div class="item auto">Lorem 1234566 ipsum 345609 hhhhhh is therefore  mmmmm always free from repetition</div>
+        <div class="item flex-end">ITEM 4</div>
+    </div>
+    <p></p>
+    <div class="flex-container column">
+        <div class="item center">AAAAAA</div>
+        <div class="item auto">123</div>
+        <div class="item stretch">Lorem 1234566 ipsum 34509 hhhhhh is therefore mmmmm always free from repetition</div>
+        <div class="item flex-end">ITEM 4</div>
+    </div>
+
+</body>
+</html>

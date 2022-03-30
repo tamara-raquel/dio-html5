@@ -138,6 +138,16 @@ Parte 2 - flex items
 	> 1: permite a redução dos itens; 0: não permite
 - flex
   > atalho ou abreviação para as propriedades: grow, shrink e basis (nessa ordem)
+- order
+  > impacta na visualização dos elementos em tela
+- align-self
+  > permite o alinhamento aplicado a um item individualmente
+	> auto: valor padrão (segue a definição do container)
+	> flex-start: início do container
+	> flex-end: fim do container
+	> center: relativo ao centro (de acordo com o eixo)
+	> stretch: ocupa todo o espaço relativo
+	> baseline: usa a linha base de tipografia
 
 III) Projeto integrador
 Land page Flex Turismos
