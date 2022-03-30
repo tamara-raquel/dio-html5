@@ -1,6 +1,7 @@
 __ Flexbox __
 
 Profª Karen Santos
+Gitlab: gitlab.com/karensantos/project-flexbox-dio
 
 Objetivo: criar páginas web que se adaptem às diferentes resoluções de tela dos dispositivos
 
@@ -150,4 +151,11 @@ Parte 2 - flex items
 	> baseline: usa a linha base de tipografia
 
 III) Projeto integrador
-Land page Flex Turismos
+Landing page Flex Turismos
+	> barra de navegação
+	> apresentação da empresa
+	> quem somos
+	> serviços
+	> planos
+  > consiste em lidar com as propriedades de flex-box
+	> estilização
